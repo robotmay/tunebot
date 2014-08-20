@@ -1,0 +1,25 @@
+<template name="layout">
+  <div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Tunebot</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          {{> accountButtons}}
+        </ul>
+      </div>
+    </nav>
+
+    <header class="row-fluid">
+      <div class="col-lg-12">
+        <h1>{{pageTitle}}</h1>
+      </div>
+    </header>
+
+    <section id="main" class="row-fluid">
+      {{> yield}}
+    </section>
+  </div>
+</template>
